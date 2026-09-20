@@ -3,9 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>USA Weather Forecast | Today, Hourly &amp; 7-Day</title>
-<meta name="description" content="Get the latest USA weather forecast with current conditions, hourly weather, 7-day forecasts, live radar and severe weather alerts for cities and ZIP codes across the United States.">
-<meta name="keywords" content="USA weather forecast, U.S. weather forecast, weather today, hourly weather forecast, 7-day weather forecast, live weather radar, severe weather alerts, weather by ZIP code, local weather forecast, current weather">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light">
+<title>Chris Bailey Weather Forecast | Today, Hourly &amp; 7-Day</title>
+<meta name="description" content="Chris Bailey Weather Forecast with current conditions, hourly weather, 7-day forecasts, radar, alerts, and local U.S. weather updates.">
+<meta name="keywords" content="Chris Bailey Weather Forecast, Chris Bailey Weather, Chris Bailey forecast, Chris Bailey weather forecast, Chris Bailey USA weather, Chris Bailey local weather forecast, Chris Bailey hourly weather, Chris Bailey 7 day forecast, weather forecast, local weather forecast, hourly weather forecast, 7-day weather forecast, weather radar, severe weather alerts, current weather, U.S. weather">
 <link rel="canonical" href="https://chris-bailey-weather.vercel.app/">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="author" content="Chris Bailey Weather">
@@ -14,17 +16,18 @@
 <link rel="alternate" hreflang="en-US" href="https://chris-bailey-weather.vercel.app/">
 <meta property="og:site_name" content="Chris Bailey Weather">
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="USA Weather Forecast | Today, Hourly &amp; 7-Day">
-<meta property="og:description" content="Get current USA weather, hourly forecasts, 7-day outlooks, live radar and severe weather alerts for cities and ZIP codes across the United States.">
+<meta property="og:title" content="Chris Bailey Weather Forecast | Today, Hourly &amp; 7-Day">
+<meta property="og:description" content="Chris Bailey Weather Forecast with current conditions, hourly weather, 7-day forecasts, radar, alerts, and local U.S. weather updates.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://chris-bailey-weather.vercel.app/">
-<meta property="og:image" content="https://chris-bailey-weather.vercel.app/images/usa-weather-forecast.webp">
-<meta property="og:image:alt" content="USA weather forecast and current weather conditions">
+<link rel="preload" as="image" href="https://chris-bailey-weather.vercel.app/images/chris-bailey-weather-forecast.webp" type="image/webp" fetchpriority="high">
+    <meta property="og:image" content="https://chris-bailey-weather.vercel.app/images/chris-bailey-weather-forecast.webp">
+<meta property="og:image:alt" content="Chris Bailey Weather Forecast with current weather conditions">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="USA Weather Forecast | Today, Hourly &amp; 7-Day">
-<meta name="twitter:description" content="Current USA weather, hourly forecasts, 7-day outlooks, live radar and severe weather alerts for cities and ZIP codes.">
-<meta name="twitter:image" content="https://chris-bailey-weather.vercel.app/images/usa-weather-forecast.webp">
-<meta name="twitter:image:alt" content="USA weather forecast and current weather conditions">
+<meta name="twitter:title" content="Chris Bailey Weather Forecast | Today, Hourly &amp; 7-Day">
+<meta name="twitter:description" content="Chris Bailey Weather Forecast with current conditions, hourly weather, 7-day forecasts, radar, alerts, and local U.S. weather updates.">
+<meta name="twitter:image" content="https://chris-bailey-weather.vercel.app/images/chris-bailey-weather-forecast.webp">
+<meta name="twitter:image:alt" content="Chris Bailey Weather Forecast with current weather conditions">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-89E9YSJEK6"></script>
@@ -35,29 +38,54 @@ gtag('js',new Date());gtag('config','G-89E9YSJEK6');
 
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@graph":[
-  {
-   "@type":"WebSite",
-   "@id":"https://chris-bailey-weather.vercel.app/#website",
-   "name":"Chris Bailey Weather",
-   "url":"https://chris-bailey-weather.vercel.app/",
-   "description":"Independent U.S. weather information with live forecasts, hourly outlooks, 7-day forecasts, radar and severe weather alerts."
-  },
-  {
-   "@type":"Organization",
-   "@id":"https://chris-bailey-weather.vercel.app/#organization",
-   "name":"Chris Bailey Weather",
-   "url":"https://chris-bailey-weather.vercel.app/"
-  }
- ]
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://chris-bailey-weather.vercel.app/#website",
+      "name":"Chris Bailey Weather",
+      "url":"https://chris-bailey-weather.vercel.app/",
+      "description":"Chris Bailey Weather Forecast with current conditions, hourly weather, 7-day forecasts, radar and severe weather alerts for U.S. locations."
+    },
+    {
+      "@type":"WebApplication",
+      "@id":"https://chris-bailey-weather.vercel.app/#webapp",
+      "name":"Chris Bailey Weather Forecast",
+      "url":"https://chris-bailey-weather.vercel.app/",
+      "applicationCategory":"WeatherApplication",
+      "operatingSystem":"Web browser",
+      "browserRequirements":"Requires JavaScript for live weather data",
+      "description":"Search U.S. cities and ZIP codes for current weather, hourly forecasts, 7-day forecasts, radar and severe weather alerts.",
+      "isAccessibleForFree":true
+    },
+    {
+      "@type":"BreadcrumbList",
+      "@id":"https://chris-bailey-weather.vercel.app/#breadcrumb",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://chris-bailey-weather.vercel.app/"}
+      ]
+    },
+    {
+      "@type":"FAQPage",
+      "@id":"https://chris-bailey-weather.vercel.app/#faq",
+      "mainEntity":[
+        {"@type":"Question","name":"What is Chris Bailey Weather Forecast?","acceptedAnswer":{"@type":"Answer","text":"Chris Bailey Weather Forecast is a U.S. weather information website that lets visitors search by city, state or ZIP code for current conditions, hourly weather, a 7-day forecast, radar and weather alerts."}},
+        {"@type":"Question","name":"Where can I check today's Chris Bailey weather forecast?","acceptedAnswer":{"@type":"Answer","text":"Use the search box on the homepage to enter a U.S. city, state or ZIP code. The page then loads current National Weather Service forecast information for the selected location."}},
+        {"@type":"Question","name":"Can I search for weather by ZIP code?","acceptedAnswer":{"@type":"Answer","text":"Yes. Enter a U.S. ZIP code in the location search box to find the corresponding location and load available weather forecast information."}},
+        {"@type":"Question","name":"Does Chris Bailey Weather provide hourly forecasts?","acceptedAnswer":{"@type":"Answer","text":"Yes. The homepage displays an hourly weather forecast for the selected U.S. location using National Weather Service forecast data."}},
+        {"@type":"Question","name":"Can I view a 7-day weather forecast?","acceptedAnswer":{"@type":"Answer","text":"Yes. Select a location to view an extended forecast covering the available daily forecast periods."}},
+        {"@type":"Question","name":"Does the website provide weather radar?","acceptedAnswer":{"@type":"Answer","text":"Yes. The radar section embeds the National Weather Service radar viewer so visitors can monitor precipitation and storm activity."}},
+        {"@type":"Question","name":"How can I find weather alerts for my location?","acceptedAnswer":{"@type":"Answer","text":"Search for a location and review the Severe Weather Alerts section. Active alert information is requested from the National Weather Service API."}}
+      ]
+    }
+  ]
 }
 </script>
 
 <style>
 :root{--navy:#071d33;--blue:#0878bd;--cyan:#22b8ee;--sky:#eaf7ff;--ink:#112538;--muted:#647789;--line:#dbe7ef;--card:#fff;--shadow:0 18px 55px rgba(5,30,52,.11);--radius:20px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:#f5f9fc;line-height:1.6}button,input{font:inherit}button{cursor:pointer}a{color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
-a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #22b8ee;outline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #22b8ee;outline-offset:3px}.skip-link{position:absolute;left:-9999px;top:8px;z-index:9999;background:#fff;color:#071d33;padding:10px 14px;border-radius:8px;font-weight:800}.skip-link:focus{left:8px}
 header{color:#fff;position:relative;overflow:hidden;background:radial-gradient(circle at 80% 20%,rgba(34,184,238,.28),transparent 28%),linear-gradient(135deg,#041525,#07375c 58%,#0785c5)}
 header:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 35%,rgba(255,255,255,.04) 36%,transparent 37%);background-size:45px 45px;pointer-events:none}
 .top{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.16);position:relative;z-index:2}.logo{font-size:21px;font-weight:900}.logo span{font-weight:500;opacity:.7}.nav{display:flex;gap:22px}.nav a{text-decoration:none;font-size:14px;font-weight:700;opacity:.9}.nav a:hover{text-decoration:underline}
@@ -84,16 +112,17 @@ footer{background:#061b2f;color:#dbeaf3;padding:42px 0}.footer-grid{display:flex
 </style>
 </head>
 <body>
+<a href="#forecast" class="skip-link">Skip to weather forecast</a>
 <header>
 <div class="wrap">
 <div class="top"><div class="logo">⛅ Chris Bailey Weather <span>USA</span></div>
-<nav class="nav" aria-label="Primary navigation"><a href="#forecast">Forecast</a><a href="#hourly">Hourly</a><a href="#radar">Radar</a><a href="#alerts">Alerts</a><a href="#cities">Cities</a><a href="#tools">Tools</a></nav></div>
+<nav class="nav" aria-label="Primary navigation"><a href="#forecast">Forecast</a><a href="#hourly">Hourly</a><a href="#radar">Radar</a><a href="#alerts">Alerts</a><a href="#cities">Cities</a><a href="#tools">Weather Tools</a><a href="#faq">FAQ</a></nav></div>
 <div class="hero">
 <div class="eyebrow">U.S. WEATHER • LIVE FORECAST • RADAR • SEVERE WEATHER</div>
-<h1>USA Weather Forecast: Today, Hourly &amp; 7-Day Weather</h1>
-<p class="hero-copy">Check today’s USA weather forecast, current conditions, hourly weather, 7-day forecasts, live radar and severe weather alerts for cities and ZIP codes across the United States.</p>
+<h1>Chris Bailey Weather Forecast</h1>
+<p class="hero-copy">Chris Bailey Weather Forecast helps you find current conditions, hourly weather, 7-day forecasts, live radar and severe weather alerts. Search a U.S. city, state or ZIP code, or use My Location for local weather.</p>
 <div class="search-card">
-<div class="search-title">Search a U.S. city, state or ZIP code</div>
+<div class="search-title">Search a U.S. city, state, ZIP code, or use My Location</div>
 <div class="search-row"><div class="search-location-wrap"><input id="location" placeholder="Dallas, TX or 75201" aria-label="Search U.S. city, state or ZIP code" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="searchSuggestions"><div id="searchSuggestions" class="search-suggestions" role="listbox" aria-label="Location search suggestions"></div></div><button class="btn primary" type="button" onclick="searchWeather()" aria-label="Get weather for searched location">Get Weather</button><button class="btn light" type="button" onclick="useLocation()" aria-label="Use my current location for weather">📍 My Location</button></div>
 <div class="quick">Popular: <button type="button" onclick="selectCity('New York, NY')">New York</button><button type="button" onclick="selectCity('Los Angeles, CA')">Los Angeles</button><button type="button" onclick="selectCity('Chicago, IL')">Chicago</button><button type="button" onclick="selectCity('Dallas, TX')">Dallas</button><button type="button" onclick="selectCity('Miami, FL')">Miami</button><button type="button" onclick="selectCity('Houston, TX')">Houston</button></div>
 <div id="searchResult" style="margin-top:10px;color:#0872a8;font-weight:750" role="status" aria-live="polite"></div>
@@ -101,10 +130,10 @@ footer{background:#061b2f;color:#dbeaf3;padding:42px 0}.footer-grid{display:flex
 </div></div></div>
 </header>
 
-<main>
+<main id="main-content">
 <section id="forecast"><div class="wrap">
 <div class="section-head"><div><h2>Current U.S. Weather Forecast</h2><p>Live local conditions at your selected location.</p></div><button class="btn light" type="button" onclick="refreshWeather()">↻ Refresh</button></div>
-<p class="notice" style="margin:0 0 18px">Use this USA weather forecast dashboard to check current conditions, hourly weather, 7-day forecasts, precipitation risk and local weather information for U.S. cities and ZIP codes.</p>
+<p class="notice" style="margin:0 0 18px"><strong>Chris Bailey Weather Forecast</strong> is a practical U.S. weather dashboard for checking current conditions, hourly weather and 7-day forecasts for the location you choose. Search by city, state or ZIP code to move from a broad local forecast to the weather details that matter right now. You can also review precipitation chances, live radar and National Weather Service alerts. The page is designed for everyday planning, including commuting, travel, outdoor activities and weather-sensitive decisions. Forecast information can change as new observations and forecast data become available, so use the latest local forecast and official emergency guidance when conditions are dangerous.</p>
 <div class="dashboard"><div class="weather-card">
 <div class="location-line"><div class="location" id="cityName">Charlotte, NC</div><div class="updated" id="updated">Loading live weather…</div></div>
 <div class="current"><div class="weather-icon" id="weatherIcon">☀️</div><div><div class="temperature"><span id="temp">—</span><span id="tempC" class="celsius"></span></div><div class="condition" id="condition">Loading current conditions…</div></div></div>
@@ -115,7 +144,7 @@ footer{background:#061b2f;color:#dbeaf3;padding:42px 0}.footer-grid{display:flex
 </div></div></div></section>
 
 <section id="hourly"><div class="wrap"><div class="section-head"><div><h2>Hourly Weather Forecast for the U.S.</h2><p>See the next 12 hours before you head out.</p></div></div><div class="hourly" id="hourlyForecast"></div></div></section>
-<section><div class="wrap"><div class="section-head"><div><h2>7-Day U.S. Weather Forecast</h2><p>Plan work, travel and outdoor activities with the extended outlook.</p></div></div><div class="week" id="weeklyForecast"></div></div></section>
+<section id="week"><div class="wrap"><div class="section-head"><div><h2>7-Day U.S. Weather Forecast</h2><p>Plan work, travel and outdoor activities with the extended outlook.</p></div></div><div class="week" id="weeklyForecast"></div></div></section>
 
 <section class="radar-section" id="radar"><div class="wrap"><div class="section-head"><div><h2>Live U.S. Weather Radar</h2><p>Track precipitation and storm activity on the official National Weather Service radar viewer.</p></div></div><p class="notice">Weather radar can help you follow approaching precipitation and storm movement. For dangerous conditions, rely on official alerts and local emergency guidance.</p><div class="radar"><div class="radar-badge">📡 NWS Radar</div><iframe src="https://radar.weather.gov/" title="National Weather Service live weather radar" loading="lazy"></iframe></div></div></section>
 
@@ -130,9 +159,7 @@ footer{background:#061b2f;color:#dbeaf3;padding:42px 0}.footer-grid{display:flex
 <section><div class="wrap"><div class="section-head"><div><h2 id="localTitle">Charlotte, NC Weather</h2><p>Local forecast context for your selected location.</p></div></div><div class="local"><p id="localText">Live local weather details will appear here after a city or ZIP code is searched. Use hourly weather for short-term planning, the 7-day outlook for upcoming plans, and radar when precipitation or storms are nearby.</p></div></div></section>
 
 <section id="cities"><div class="wrap"><div class="section-head"><div><h2>Weather Forecast by U.S. City</h2><p>Quickly load live weather for major American cities.</p></div></div>
-<div class="city-grid">
-<button class="city-pill" type="button" data-city="New York, NY">New York, NY</button><button class="city-pill" type="button" data-city="Los Angeles, CA">Los Angeles, CA</button><button class="city-pill" type="button" data-city="Chicago, IL">Chicago, IL</button><button class="city-pill" type="button" data-city="Houston, TX">Houston, TX</button><button class="city-pill" type="button" data-city="Phoenix, AZ">Phoenix, AZ</button><button class="city-pill" type="button" data-city="Philadelphia, PA">Philadelphia, PA</button><button class="city-pill" type="button" data-city="San Antonio, TX">San Antonio, TX</button><button class="city-pill" type="button" data-city="San Diego, CA">San Diego, CA</button><button class="city-pill" type="button" data-city="Dallas, TX">Dallas, TX</button><button class="city-pill" type="button" data-city="Austin, TX">Austin, TX</button><button class="city-pill" type="button" data-city="Miami, FL">Miami, FL</button><button class="city-pill" type="button" data-city="Atlanta, GA">Atlanta, GA</button><button class="city-pill" type="button" data-city="Denver, CO">Denver, CO</button><button class="city-pill" type="button" data-city="Seattle, WA">Seattle, WA</button><button class="city-pill" type="button" data-city="Boston, MA">Boston, MA</button><button class="city-pill" type="button" data-city="Nashville, TN">Nashville, TN</button><button class="city-pill" type="button" data-city="Charlotte, NC">Charlotte, NC</button><button class="city-pill" type="button" data-city="Las Vegas, NV">Las Vegas, NV</button><button class="city-pill" type="button" data-city="Orlando, FL">Orlando, FL</button><button class="city-pill" type="button" data-city="Washington, DC">Washington, DC</button>
-</div></div></section>
+<div class="city-grid"><button class="city-pill" type="button" data-city="New York, NY">New York, NY</button><button class="city-pill" type="button" data-city="Los Angeles, CA">Los Angeles, CA</button><button class="city-pill" type="button" data-city="Chicago, IL">Chicago, IL</button><button class="city-pill" type="button" data-city="Houston, TX">Houston, TX</button><button class="city-pill" type="button" data-city="Phoenix, AZ">Phoenix, AZ</button><button class="city-pill" type="button" data-city="Dallas, TX">Dallas, TX</button><button class="city-pill" type="button" data-city="San Antonio, TX">San Antonio, TX</button><button class="city-pill" type="button" data-city="Philadelphia, PA">Philadelphia, PA</button><button class="city-pill" type="button" data-city="San Diego, CA">San Diego, CA</button><button class="city-pill" type="button" data-city="Austin, TX">Austin, TX</button><button class="city-pill" type="button" data-city="Jacksonville, FL">Jacksonville, FL</button><button class="city-pill" type="button" data-city="Fort Worth, TX">Fort Worth, TX</button><button class="city-pill" type="button" data-city="Columbus, OH">Columbus, OH</button><button class="city-pill" type="button" data-city="Charlotte, NC">Charlotte, NC</button><button class="city-pill" type="button" data-city="Seattle, WA">Seattle, WA</button><button class="city-pill" type="button" data-city="Denver, CO">Denver, CO</button><button class="city-pill" type="button" data-city="Washington, DC">Washington, DC</button><button class="city-pill" type="button" data-city="Boston, MA">Boston, MA</button><button class="city-pill" type="button" data-city="Nashville, TN">Nashville, TN</button><button class="city-pill" type="button" data-city="Las Vegas, NV">Las Vegas, NV</button><button class="city-pill" type="button" data-city="Miami, FL">Miami, FL</button><button class="city-pill" type="button" data-city="Atlanta, GA">Atlanta, GA</button></div></div></section>
 
 <section id="tools" style="background:#eaf4fa"><div class="wrap"><div class="section-head"><div><h2>Free Weather Forecast Tools</h2><p>Useful calculators for heat, cold, temperature and humidity.</p></div></div>
 <div class="tools">
@@ -150,12 +177,60 @@ footer{background:#061b2f;color:#dbeaf3;padding:42px 0}.footer-grid{display:flex
 </div></article></div></section>
 
 
-<section id="faq"><div class="wrap"><div class="section-head"><div><h2>USA Weather Forecast FAQ</h2><p>Answers to common questions about current, hourly and extended U.S. weather forecasts.</p></div></div>
+
+<section id="about-forecast">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Chris Bailey Weather Forecast Guide</h2>
+        <p>Understand current conditions, hourly weather, 7-day forecasts, radar and alerts.</p>
+      </div>
+    </div>
+    <article class="article">
+      <div class="article-grid">
+        <div>
+          <h3>Today's Weather Forecast</h3>
+          <p>The current weather view is the fastest way to understand conditions at your selected location. Temperature, feels-like temperature, humidity, wind and precipitation probability can help you decide what to wear, how to travel and whether outdoor plans need adjustment. Because weather observations and forecast data update over time, the latest available information should be checked when conditions are important.</p>
+          <h3>Hourly Weather Forecast</h3>
+          <p>An hourly weather forecast is useful when your plans depend on changes during the next several hours. Compare temperature, precipitation probability, wind and the stated weather condition across the hourly periods. This can help with commuting, school activities, outdoor work, sports, travel and other short-term decisions.</p>
+          <h3>7-Day Weather Forecast</h3>
+          <p>The 7-day forecast provides a broader planning view. Look at daily high and low temperatures, expected conditions and precipitation chances rather than treating a single number as guaranteed. Forecast confidence can change as the forecast period approaches, so revisit the outlook before weather-sensitive plans.</p>
+        </div>
+        <div>
+          <h3>Weather Radar</h3>
+          <p>Weather radar helps you follow precipitation and storm movement. It can show whether rain or other precipitation is developing nearby and whether activity appears to be moving toward or away from an area. Radar is most useful when combined with the local forecast and official alerts rather than used by itself.</p>
+          <h3>Severe Weather Alerts</h3>
+          <p>Severe weather alerts communicate potentially hazardous conditions such as storms, flooding, extreme heat and other weather threats. A watch generally indicates conditions are favorable for a hazard, while a warning indicates that hazardous weather is occurring, imminent or detected. When an official warning affects your location, follow local emergency instructions and seek appropriate shelter or take other recommended action.</p>
+          <h3>Local U.S. Weather</h3>
+          <p>Local weather can differ substantially between cities and even nearby areas. Search by U.S. city, state or ZIP code to load forecast information for the place you actually care about. My Location can also use your browser's location permission to request weather for your current position.</p>
+        </div>
+      </div>
+      <h3>How to Use Chris Bailey Weather</h3>
+      <p>Start with the location search at the top of the page. Type a city and state, a ZIP code, or choose a suggestion from the autocomplete list. You can also select My Location if you want the browser to provide your position. After a location is loaded, review current conditions first, then move to hourly weather and the 7-day forecast. Use radar when precipitation or storms are nearby and review active alerts for safety information.</p>
+      <p>The site brings several weather resources into one page while keeping the primary task simple: find a U.S. location and understand its forecast. Weather data is retrieved from the National Weather Service, while location lookup uses OpenStreetMap Nominatim. External services can have their own availability, rate limits and attribution requirements.</p>
+      <h3>Weather Terms to Know</h3>
+      <ul>
+        <li><strong>Current conditions:</strong> The latest available weather information for the selected location.</li>
+        <li><strong>Hourly forecast:</strong> Short-term forecast periods useful for planning the next several hours.</li>
+        <li><strong>7-day forecast:</strong> A broader daily outlook for upcoming weather trends.</li>
+        <li><strong>Precipitation probability:</strong> The forecast chance of precipitation for a period.</li>
+        <li><strong>Radar:</strong> A visualization used to monitor precipitation and storm activity.</li>
+        <li><strong>Watch:</strong> Conditions are favorable for a particular hazardous-weather event.</li>
+        <li><strong>Warning:</strong> Hazardous weather is occurring, imminent or detected and action may be needed.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="faq"><div class="wrap"><div class="section-head"><div><h2>Frequently Asked Questions</h2><p>Answers to common questions about current, hourly and extended U.S. weather forecasts.</p></div></div>
 <div class="content-grid">
-<div class="info-card"><h3>Where can I check a U.S. weather forecast?</h3><p>Search a U.S. city, state or ZIP code to load local weather information, including current conditions, hourly weather and a 7-day forecast.</p>
-<h3>How often should I check the weather?</h3><p>Weather conditions and forecasts can change as new observations and forecast data become available. Check the current forecast again when weather-sensitive plans are important.</p></div>
-<div class="info-card"><h3>What is the difference between hourly and 7-day weather?</h3><p>The hourly forecast helps with short-term planning during the next several hours, while the 7-day forecast provides a broader view of expected conditions over the coming days.</p>
-<h3>Where can I find severe weather alerts?</h3><p>The alerts section displays active National Weather Service information for the selected location. For dangerous weather, follow official emergency instructions and local authorities.</p></div>
+<div class="info-card"><h3>What is Chris Bailey Weather Forecast?</h3><p>Chris Bailey Weather Forecast is a U.S. weather information website for current conditions, hourly weather, 7-day forecasts, radar and weather alerts. Search by city, state or ZIP code to load local forecast information.</p>
+<h3>Where can I check today’s Chris Bailey weather forecast?</h3><p>Use the homepage search box to select a U.S. city, state or ZIP code. The dashboard then loads the latest available National Weather Service forecast information for that location.</p></div>
+<div class="info-card"><h3>Can I search for weather by ZIP code?</h3><p>Yes. Enter a U.S. ZIP code in the main search box to find a location and load its available weather forecast.</p>
+<h3>Does Chris Bailey Weather provide hourly forecasts?</h3><p>Yes. The hourly section displays upcoming forecast periods for the selected location using National Weather Service data.</p></div>
+<div class="info-card"><h3>Can I view a 7-day weather forecast?</h3><p>Yes. Select a location to view the available daily forecast periods and use them for broader planning.</p>
+<h3>Does the website provide weather radar?</h3><p>Yes. The radar section uses the National Weather Service radar viewer to help monitor precipitation and storm activity.</p></div>
+<div class="info-card"><h3>How can I find weather alerts for my location?</h3><p>Search for your location and review the Severe Weather Alerts section. Active alert information is requested from the National Weather Service API.</p></div>
 </div></div></section>
 
 <section id="safety"><div class="wrap"><div class="section-head"><div><h2>U.S. Weather Safety Guides</h2><p>Use official emergency guidance when dangerous weather threatens.</p></div></div>
@@ -171,7 +246,7 @@ footer{background:#061b2f;color:#dbeaf3;padding:42px 0}.footer-grid{display:flex
 </div></div></section>
 </main>
 
-<footer><div class="wrap"><div class="footer-grid"><div><h2 style="margin:0 0 7px">Chris Bailey Weather</h2><p class="small">Independent U.S. weather information, forecasts and practical tools. During severe weather, follow official emergency instructions.</p></div><div class="footer-links"><a href="#forecast">Forecast</a><a href="#hourly">Hourly Forecast</a><a href="#radar">Live Radar</a><a href="#alerts">Weather Alerts</a><a href="#cities">Weather by City</a><a href="#tools">Weather Tools</a><a href="#safety">Safety</a><a href="#faq">Weather FAQ</a></div></div><p class="small" style="margin-top:25px">Data sources: National Weather Service (NWS) and OpenStreetMap Nominatim. External services may have their own usage, attribution, rate-limit and caching requirements.</p></div></footer>
+<footer><div class="wrap"><div class="footer-grid"><div><h2 style="margin:0 0 7px">Chris Bailey Weather</h2><p class="small">Independent U.S. weather information, forecasts and practical tools. During severe weather, follow official emergency instructions.</p></div><div class="footer-links"><a href="#forecast">Forecast</a><a href="#hourly">Hourly Forecast</a><a href="#radar">Live Radar</a><a href="#alerts">Weather Alerts</a><a href="#cities">Weather by City</a><a href="#tools">Weather Tools</a><a href="#safety">Safety</a><a href="#about-forecast">Forecast Guide</a><a href="#faq">Weather FAQ</a></div></div><p class="small" style="margin-top:25px">Data sources: National Weather Service (NWS) and OpenStreetMap Nominatim. External services may have their own usage, attribution, rate-limit and caching requirements.</p></div></footer>
 
 <script>
 const NWS="https://api.weather.gov";
