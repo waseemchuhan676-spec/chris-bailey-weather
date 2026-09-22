@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light">
+<title>Chris Bailey Weather Tools: Heat, Wind Chill &amp; Dew Point</title>
+<meta name="description" content="Free Chris Bailey weather calculators. Calculate heat index danger levels, wind chill frostbite risk, dew point comfort and quick temperature conversions.">
+<meta name="keywords" content="Chris Bailey weather tools, heat index calculator, wind chill calculator, dew point calculator, temperature converter, fahrenheit to celsius, weather safety tools">
+<link rel="canonical" href="https://chris-bailey-weather.vercel.app/tools.html">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="Chris Bailey Weather">
+<meta name="application-name" content="Chris Bailey Weather">
+<meta name="theme-color" content="#071d33">
+<link rel="alternate" hreflang="en-US" href="https://chris-bailey-weather.vercel.app/tools.html">
+<meta property="og:site_name" content="Chris Bailey Weather">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Chris Bailey Weather Tools: Heat, Wind Chill &amp; Dew Point">
+<meta property="og:description" content="Free Chris Bailey weather calculators. Calculate heat index danger levels, wind chill frostbite risk, dew point comfort and quick temperature conversions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chris-bailey-weather.vercel.app/tools.html">
+<meta property="og:image" content="https://chris-bailey-weather.vercel.app/images/chris-bailey-weather-forecast.webp">
+<meta property="og:image:alt" content="Chris Bailey Weather Tools and Safety Calculators">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chris Bailey Weather Tools: Heat, Wind Chill &amp; Dew Point">
+<meta name="twitter:description" content="Free Chris Bailey weather calculators. Calculate heat index danger levels, wind chill frostbite risk, dew point comfort and quick temperature conversions.">
+<meta name="twitter:image" content="https://chris-bailey-weather.vercel.app/images/chris-bailey-weather-forecast.webp">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-89E9YSJEK6"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-89E9YSJEK6');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebPage",
+      "@id":"https://chris-bailey-weather.vercel.app/tools.html#webpage",
+      "name":"Chris Bailey Weather Tools & Free Calculators",
+      "url":"https://chris-bailey-weather.vercel.app/tools.html",
+      "description":"Interactive weather calculators for heat index, wind chill, dew point comfort, and temperature conversions."
+    },
+    {
+      "@type":"WebApplication",
+      "@id":"https://chris-bailey-weather.vercel.app/tools.html#webapp",
+      "name":"Chris Bailey Weather Calculators",
+      "url":"https://chris-bailey-weather.vercel.app/tools.html",
+      "applicationCategory":"WeatherApplication",
+      "operatingSystem":"Web browser",
+      "browserRequirements":"Requires JavaScript for dynamic weather calculations",
+      "description":"Comprehensive weather calculators for evaluating dangerous heat, cold wind chill, and air moisture comfort.",
+      "isAccessibleForFree":true
+    },
+    {
+      "@type":"BreadcrumbList",
+      "@id":"https://chris-bailey-weather.vercel.app/tools.html#breadcrumb",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://chris-bailey-weather.vercel.app/"},
+        {"@type":"ListItem","position":2,"name":"Weather Tools","item":"https://chris-bailey-weather.vercel.app/tools.html"}
+      ]
+    },
+    {
+      "@type":"FAQPage",
+      "@id":"https://chris-bailey-weather.vercel.app/tools.html#faq",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"What is the Heat Index and why does it matter?",
+          "acceptedAnswer":{"@type":"Answer","text":"The Heat Index combines ambient air temperature and relative humidity to measure how hot it feels to the human body. High humidity slows sweat evaporation, significantly increasing the risk of heat exhaustion and heat stroke."}
+        },
+        {
+          "@type":"Question",
+          "name":"At what Wind Chill level does frostbite occur?",
+          "acceptedAnswer":{"@type":"Answer","text":"When the wind chill drops to -19°F to -33°F, frostbite can develop on exposed skin in 10 minutes or less. At wind chills below -33°F, frostbite can occur within 5 minutes."}
+        },
+        {
+          "@type":"Question",
+          "name":"What is a comfortable dew point range?",
+          "acceptedAnswer":{"@type":"Answer","text":"A dew point between 50°F and 60°F is generally considered comfortable and pleasant. Dew points above 65°F feel muggy, while values above 70°F feel oppressive and tropical."}
+        },
+        {
+          "@type":"Question",
+          "name":"How do I convert Fahrenheit to Celsius accurately?",
+          "acceptedAnswer":{"@type":"Answer","text":"Subtract 32 from the Fahrenheit temperature and multiply the result by 5/9. For example, (86°F - 32) × 5/9 = 30°C."}
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root{--navy:#071d33;--blue:#0878bd;--cyan:#22b8ee;--sky:#eaf7ff;--ink:#112538;--muted:#647789;--line:#dbe7ef;--card:#fff;--shadow:0 18px 55px rgba(5,30,52,.11);--radius:20px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:#f5f9fc;line-height:1.6}button,input{font:inherit}button{cursor:pointer}a{color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #22b8ee;outline-offset:3px}.skip-link{position:absolute;left:-9999px;top:8px;z-index:9999;background:#fff;color:#071d33;padding:10px 14px;border-radius:8px;font-weight:800}.skip-link:focus{left:8px}
+header{color:#fff;position:relative;overflow:hidden;background:radial-gradient(circle at 80% 20%,rgba(34,184,238,.28),transparent 28%),linear-gradient(135deg,#041525,#07375c 58%,#0785c5)}
+header:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 35%,rgba(255,255,255,.04) 36%,transparent 37%);background-size:45px 45px;pointer-events:none}
+.top{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.16);position:relative;z-index:2}.logo{font-size:21px;font-weight:900;text-decoration:none;color:#fff}.logo span{font-weight:500;opacity:.7}.nav{display:flex;gap:20px}.nav a{text-decoration:none;font-size:14px;font-weight:700;opacity:.9}.nav a:hover{text-decoration:underline}.nav a.active{color:#22b8ee;border-bottom:2px solid #22b8ee;padding-bottom:4px}
+.hero{padding:54px 0 60px;position:relative;z-index:1}.eyebrow{font-size:12px;font-weight:900;letter-spacing:1.8px;color:#b9ebff}.hero h1{font-size:clamp(36px,5.5vw,62px);line-height:1.05;letter-spacing:-2.4px;margin:12px 0 16px;max-width:860px}.hero-copy{font-size:17px;max-width:760px;color:#e1f5ff;margin:0 0 24px}
+.breadcrumbs{display:flex;gap:8px;font-size:13px;color:#b9ebff;margin-bottom:14px}.breadcrumbs a{text-decoration:none;color:#fff;font-weight:700}.breadcrumbs a:hover{text-decoration:underline}
+.btn{border:0;border-radius:12px;padding:12px 20px;font-weight:850;background:var(--navy);color:#fff;display:inline-flex;align-items:center;gap:6px;text-decoration:none}.btn.primary{background:linear-gradient(135deg,#0878bd,#0aa4dc)}.btn.light{background:#edf5fa;color:var(--navy)}
+main section{padding:50px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:23px}.section-head h2{font-size:30px;letter-spacing:-1px;margin:0}.section-head p{color:var(--muted);margin:5px 0 0}
+.tools-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.tool-box{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:var(--shadow)}
+.tool-box h3{margin:0 0 8px;font-size:22px}
+.tool-desc{color:var(--muted);font-size:14px;margin-bottom:18px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:13px;font-weight:800;color:var(--ink)}
+.field input,.field select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font:inherit}
+.field input:focus,.field select:focus{border-color:#3aaee0;outline:none;box-shadow:0 0 0 3px rgba(34,184,238,.14)}
+.calc-result{background:#f1f8fc;border:1px solid #d4e8f5;border-radius:14px;padding:16px;margin-top:16px}
+.calc-result b{font-size:20px;display:block;color:var(--ink)}
+.calc-badge{display:inline-block;padding:4px 10px;border-radius:8px;font-size:12px;font-weight:900;margin-top:8px;text-transform:uppercase}
+.badge-caution{background:#fff3cd;color:#856404}
+.badge-extreme-caution{background:#ffe8cc;color:#d9480f}
+.badge-danger{background:#f8d7da;color:#721c24}
+.badge-extreme-danger{background:#dc3545;color:#fff}
+.badge-safe{background:#d4edda;color:#155724}
+.badge-info{background:#cce5ff;color:#004085}
+.article{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:var(--shadow);margin-top:30px}
+.article h3{font-size:22px;margin:24px 0 8px}.article h3:first-child{margin-top:0}
+.article p,.article li{color:#42576a}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.faq-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.faq-card h3{margin-top:0;font-size:18px}
+.faq-card p{color:var(--muted);margin:6px 0 0;font-size:14px}
+footer{background:#061b2f;color:#dbeaf3;padding:42px 0;margin-top:50px}
+.footer-grid{display:flex;justify-content:space-between;gap:30px}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
+.footer-links a{text-decoration:none;color:#dbeaf3}.footer-links a:hover{text-decoration:underline}
+.small{font-size:12px;color:#94adbd;max-width:760px}
+@media(max-width:850px){.tools-grid{grid-template-columns:1fr}.faq-grid{grid-template-columns:1fr}}
+@media(max-width:650px){.nav{display:none}.hero{padding:40px 0}.field-row{grid-template-columns:1fr}.footer-grid{display:block}}
+</style>
+</head>
+<body>
+<a href="#calculators" class="skip-link">Skip to weather tools</a>
+<header>
+<div class="wrap">
+<div class="top">
+<a href="index.html" class="logo">⛅ Chris Bailey Weather <span>USA</span></a>
+<nav class="nav" aria-label="Primary navigation">
+<a href="index.html#forecast">Forecast</a>
+<a href="index.html#hourly">Hourly</a>
+<a href="radar.html">Live Radar</a>
+<a href="index.html#alerts">Severe Alerts</a>
+<a href="tools.html" class="active" aria-current="page">Weather Tools</a>
+<a href="index.html#cities">Cities</a>
+<a href="#faq">FAQ</a>
+</nav>
+</div>
+<div class="hero">
+<div class="breadcrumbs"><a href="index.html">Home</a> <span>›</span> <span>Weather Tools &amp; Calculators</span></div>
+<div class="eyebrow">INTERACTIVE WEATHER CALCULATORS • REAL-TIME SAFETY ADVISORIES</div>
+<h1>Chris Bailey Weather Tools &amp; Calculators</h1>
+<p class="hero-copy">Free, practical weather calculators designed for outdoor safety, athletics, travel, and home comfort. Accurately estimate heat index danger levels, wind chill frostbite times, dew point mugginess, and temperature conversions.</p>
+<div>
+<a href="#calculators" class="btn primary">🧮 Use Calculators Below</a>
+<a href="radar.html" class="btn light">📡 Open Live Radar</a>
+</div>
+</div>
+</div>
+</header>
+
+<main id="main-content">
+<section id="calculators">
+<div class="wrap">
+<div class="section-head">
+<div>
+<h2>Interactive Weather Calculator Suite</h2>
+<p>Formulas based on National Weather Service (NWS) &amp; NOAA meteorological standards.</p>
+</div>
+</div>
+
+<div class="tools-grid">
+
+<!-- TOOL 1: HEAT INDEX -->
+<div class="tool-box" id="heat-tool">
+<h3>🌡️ Heat Index Calculator</h3>
+<p class="tool-desc">Measures how hot it feels when humidity is factored with air temperature, highlighting heat illness risks.</p>
+<div class="field-row">
+<div class="field">
+<label for="hi-temp">Air Temperature (°F)</label>
+<input id="hi-temp" type="number" value="92" min="70" max="130" step="1">
+</div>
+<div class="field">
+<label for="hi-hum">Relative Humidity (%)</label>
+<input id="hi-hum" type="number" value="65" min="0" max="100" step="1">
+</div>
+</div>
+<button class="btn primary" type="button" onclick="calculateHeatIndex()">Calculate Heat Index</button>
+<div class="calc-result" id="hi-result">
+<b id="hi-val">Estimated Heat Index: 108.4°F (42.4°C)</b>
+<span class="calc-badge badge-danger" id="hi-badge">Danger: Heat Exhaustion Likely</span>
+<p style="margin:8px 0 0;font-size:13px;color:var(--muted)" id="hi-advice">Prolonged outdoor exposure can cause heat cramps, heat exhaustion, or heat stroke. Stay hydrated and seek shade.</p>
+</div>
+</div>
+
+<!-- TOOL 2: WIND CHILL -->
+<div class="tool-box" id="chill-tool">
+<h3>🧊 Wind Chill &amp; Frostbite Risk</h3>
+<p class="tool-desc">Calculates how cold wind makes the air feel on exposed skin and estimates the time to frostbite.</p>
+<div class="field-row">
+<div class="field">
+<label for="wc-temp">Air Temperature (°F)</label>
+<input id="wc-temp" type="number" value="20" min="-60" max="50" step="1">
+</div>
+<div class="field">
+<label for="wc-wind">Wind Speed (mph)</label>
+<input id="wc-wind" type="number" value="25" min="3" max="100" step="1">
+</div>
+</div>
+<button class="btn primary" type="button" onclick="calculateWindChill()">Calculate Wind Chill</button>
+<div class="calc-result" id="wc-result">
+<b id="wc-val">Estimated Wind Chill: 3.3°F (-15.9°C)</b>
+<span class="calc-badge badge-caution" id="wc-badge">Low Frostbite Risk</span>
+<p style="margin:8px 0 0;font-size:13px;color:var(--muted)" id="wc-advice">Dress in warm layers, cover hands and ears, and limit prolonged wind exposure.</p>
+</div>
+</div>
+
+<!-- TOOL 3: DEW POINT & COMFORT -->
+<div class="tool-box" id="dew-tool">
+<h3>💧 Dew Point &amp; Comfort Index</h3>
+<p class="tool-desc">Dew point is the absolute measure of atmospheric moisture. Discover if the air feels crisp, pleasant, or muggy.</p>
+<div class="field-row">
+<div class="field">
+<label for="dp-temp">Air Temperature (°F)</label>
+<input id="dp-temp" type="number" value="82" min="0" max="120" step="1">
+</div>
+<div class="field">
+<label for="dp-hum">Relative Humidity (%)</label>
+<input id="dp-hum" type="number" value="68" min="1" max="100" step="1">
+</div>
+</div>
+<button class="btn primary" type="button" onclick="calculateDewPoint()">Calculate Dew Point</button>
+<div class="calc-result" id="dp-result">
+<b id="dp-val">Estimated Dew Point: 70.3°F (21.3°C)</b>
+<span class="calc-badge badge-extreme-caution" id="dp-badge">Oppressive &amp; Uncomfortable</span>
+<p style="margin:8px 0 0;font-size:13px;color:var(--muted)" id="dp-advice">High humidity makes air feel heavy. Evaporative cooling through sweat is significantly impaired.</p>
+</div>
+</div>
+
+<!-- TOOL 4: TEMPERATURE CONVERTER -->
+<div class="tool-box" id="conv-tool">
+<h3>🌡️ Universal Temperature Converter</h3>
+<p class="tool-desc">Instant two-way conversion between Fahrenheit (°F), Celsius (°C), and Kelvin (K).</p>
+<div class="field-row">
+<div class="field">
+<label for="conv-val">Value</label>
+<input id="conv-val" type="number" value="77" step="0.1">
+</div>
+<div class="field">
+<label for="conv-unit">Unit</label>
+<select id="conv-unit">
+<option value="f" selected>Fahrenheit (°F)</option>
+<option value="c">Celsius (°C)</option>
+<option value="k">Kelvin (K)</option>
+</select>
+</div>
+</div>
+<button class="btn primary" type="button" onclick="calculateTempConvert()">Convert Temperature</button>
+<div class="calc-result" id="conv-result">
+<b id="conv-primary">77.0°F = 25.0°C</b>
+<span class="calc-badge badge-info" id="conv-kelvin">298.15 Kelvin</span>
+<p style="margin:8px 0 0;font-size:13px;color:var(--muted)">Standard room temperature range commonly used in climate control.</p>
+</div>
+</div>
+
+</div>
+
+<article class="article">
+<h3>Understanding Meteorological Comfort and Danger Thresholds</h3>
+<p>Meteorologists rely on indexes like the <strong>Heat Index</strong> and <strong>Wind Chill</strong> because the human body regulates temperature through convective heat exchange and perspiration evaporation. Air temperature alone tells only part of the story:</p>
+<ul>
+<li><strong>High Humidity in Summer:</strong> When dew points exceed 65°F, sweat evaporates slowly, preventing your body from cooling itself naturally. This raises core body temperature and leads to heat exhaustion or heat stroke.</li>
+<li><strong>High Winds in Winter:</strong> Wind blows away the insulating layer of warm air surrounding your skin, rapidly accelerating body heat loss and increasing the danger of frostbite and hypothermia.</li>
+</ul>
+</article>
+
+</div>
+</section>
+
+<section id="faq" style="background:#eaf4fa">
+<div class="wrap">
+<div class="section-head">
+<div>
+<h2>Frequently Asked Questions</h2>
+<p>Answers to common questions regarding weather calculations and safety indices.</p>
+</div>
+</div>
+<div class="faq-grid">
+<div class="faq-card">
+<h3>What is the Heat Index and why does it matter?</h3>
+<p>The Heat Index measures the combined effect of air temperature and humidity. High heat index values increase the danger of heat exhaustion and heat stroke during outdoor activities.</p>
+</div>
+<div class="faq-card">
+<h3>At what Wind Chill level does frostbite occur?</h3>
+<p>At wind chills between -19°F and -33°F, frostbite can occur within 10 minutes. At wind chills below -33°F, frostbite can happen in 5 minutes or less.</p>
+</div>
+<div class="faq-card">
+<h3>What is a comfortable dew point range?</h3>
+<p>Dew points between 50°F and 60°F feel comfortable. Above 65°F feels sticky and humid, and above 70°F feels tropical and oppressive.</p>
+</div>
+<div class="faq-card">
+<h3>How do I convert Fahrenheit to Celsius accurately?</h3>
+<p>Subtract 32 from the Fahrenheit temperature, then multiply by 5/9. For example: (86°F - 32) × 5/9 = 30°C.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="footer-grid">
+<div>
+<h2 style="margin:0 0 7px;font-size:20px">Chris Bailey Weather</h2>
+<p class="small">Independent U.S. weather information, forecasts and practical tools. During severe weather, follow official emergency instructions.</p>
+</div>
+<div class="footer-links">
+<a href="index.html#forecast">Forecast</a>
+<a href="index.html#hourly">Hourly Forecast</a>
+<a href="radar.html">Live Radar</a>
+<a href="index.html#alerts">Weather Alerts</a>
+<a href="tools.html">Weather Tools</a>
+<a href="index.html#cities">Weather by City</a>
+<a href="index.html#faq">Weather FAQ</a>
+</div>
+</div>
+<p class="small" style="margin-top:25px">Calculations based on National Weather Service (NWS) &amp; NOAA mathematical algorithms.</p>
+</div>
+</footer>
+
+<script>
+function fToC(f){return (f-32)*5/9;}
+function cToF(c){return (c*9/5)+32;}
+
+function calculateHeatIndex(){
+  const T=+document.getElementById("hi-temp").value;
+  const H=+document.getElementById("hi-hum").value;
+  if(isNaN(T)||isNaN(H))return;
+  let hi;
+  if(T<80){
+    hi=0.5*(T+61.0+((T-68.0)*1.2)+(H*0.094));
+  } else {
+    hi=-42.379+2.04901523*T+10.14333127*H-.22475541*T*H-.00683783*T*T-.05481717*H*H+.00122874*T*T*H+.00085282*T*H*H-.00000199*T*T*H*H;
+  }
+  const hiC=fToC(hi);
+  document.getElementById("hi-val").textContent=`Estimated Heat Index: ${hi.toFixed(1)}°F (${hiC.toFixed(1)}°C)`;
+  const badge=document.getElementById("hi-badge");
+  const adv=document.getElementById("hi-advice");
+  badge.className="calc-badge";
+  if(hi>=125){
+    badge.classList.add("badge-extreme-danger");
+    badge.textContent="Extreme Danger: Heat Stroke Imminent";
+    adv.textContent="Heat stroke is highly likely with continued exposure. Avoid outdoor activities and remain in air conditioning.";
+  } else if(hi>=103){
+    badge.classList.add("badge-danger");
+    badge.textContent="Danger: Heat Exhaustion Likely";
+    adv.textContent="Heat cramps or heat exhaustion likely; heat stroke possible with prolonged outdoor exposure or strenuous activity.";
+  } else if(hi>=90){
+    badge.classList.add("badge-extreme-caution");
+    badge.textContent="Extreme Caution: Heat Cramps Possible";
+    adv.textContent="Sunstroke, muscle cramps, and heat exhaustion are possible with prolonged exposure and physical activity.";
+  } else if(hi>=80){
+    badge.classList.add("badge-caution");
+    badge.textContent="Caution: Fatigue Possible";
+    adv.textContent="Fatigue is possible with prolonged outdoor exposure and activity. Drink plenty of water.";
+  } else {
+    badge.classList.add("badge-safe");
+    badge.textContent="Normal Temperature Comfort";
+    adv.textContent="Conditions are generally comfortable with negligible risk of heat illness.";
+  }
+  if(typeof gtag==='function') gtag('event','calculator_heat_index',{'temp':T,'humidity':H,'result':hi.toFixed(1)});
+}
+
+function calculateWindChill(){
+  const T=+document.getElementById("wc-temp").value;
+  const V=+document.getElementById("wc-wind").value;
+  if(isNaN(T)||isNaN(V))return;
+  let wc;
+  if(T>50||V<3){
+    wc=T;
+  } else {
+    wc=35.74+(0.6215*T)-(35.75*Math.pow(V,0.16))+(0.4275*T*Math.pow(V,0.16));
+  }
+  const wcC=fToC(wc);
+  document.getElementById("wc-val").textContent=`Estimated Wind Chill: ${wc.toFixed(1)}°F (${wcC.toFixed(1)}°C)`;
+  const badge=document.getElementById("wc-badge");
+  const adv=document.getElementById("wc-advice");
+  badge.className="calc-badge";
+  if(wc<=-33){
+    badge.classList.add("badge-extreme-danger");
+    badge.textContent="Extreme Danger: Frostbite in 5 Minutes";
+    adv.textContent="Exposed skin can freeze in under 5 minutes. Outdoor exposure should be strictly avoided.";
+  } else if(wc<=-19){
+    badge.classList.add("badge-danger");
+    badge.textContent="High Risk: Frostbite in 10 Minutes";
+    adv.textContent="Frostbite can occur in 10 minutes or less. Wear insulated face masks and windproof outerwear.";
+  } else if(wc<=0){
+    badge.classList.add("badge-extreme-caution");
+    badge.textContent="Moderate Risk: Frostbite in 30 Minutes";
+    adv.textContent="Frostbite can occur within 30 minutes. Wear warm winter layers, gloves, and a hat.";
+  } else {
+    badge.classList.add("badge-caution");
+    badge.textContent="Low Frostbite Risk";
+    adv.textContent="Dress in warm layers, cover hands and ears, and limit prolonged wind exposure.";
+  }
+  if(typeof gtag==='function') gtag('event','calculator_wind_chill',{'temp':T,'wind':V,'result':wc.toFixed(1)});
+}
+
+function calculateDewPoint(){
+  const T=+document.getElementById("dp-temp").value;
+  const H=+document.getElementById("dp-hum").value;
+  if(isNaN(T)||isNaN(H)||H<=0)return;
+  const Tc=fToC(T);
+  const a=17.27,b=237.7;
+  const alpha=((a*Tc)/(b+Tc))+Math.log(H/100);
+  const dpC=(b*alpha)/(a-alpha);
+  const dpF=(dpC*9/5)+32;
+  document.getElementById("dp-val").textContent=`Estimated Dew Point: ${dpF.toFixed(1)}°F (${dpC.toFixed(1)}°C)`;
+  const badge=document.getElementById("dp-badge");
+  const adv=document.getElementById("dp-advice");
+  badge.className="calc-badge";
+  if(dpF>=75){
+    badge.classList.add("badge-extreme-danger");
+    badge.textContent="Severely Oppressive & Tropical";
+    adv.textContent="Extremely high moisture makes breathing and cooling down very difficult. Stay in air conditioning.";
+  } else if(dpF>=70){
+    badge.classList.add("badge-danger");
+    badge.textContent="Oppressive & Uncomfortable";
+    adv.textContent="High humidity makes air feel heavy and muggy. Evaporative cooling through sweat is severely impaired.";
+  } else if(dpF>=65){
+    badge.classList.add("badge-extreme-caution");
+    badge.textContent="Sticky & Humid";
+    adv.textContent="Most people begin to feel noticeable moisture in the air. Outdoor athletic pacing should be eased.";
+  } else if(dpF>=55){
+    badge.classList.add("badge-safe");
+    badge.textContent="Pleasant & Comfortable";
+    adv.textContent="Comfortable summer air with adequate moisture balance.";
+  } else {
+    badge.classList.add("badge-info");
+    badge.textContent="Dry & Crisp";
+    adv.textContent="Very dry, crisp air. Skin and eyes may feel dry; stay hydrated.";
+  }
+  if(typeof gtag==='function') gtag('event','calculator_dew_point',{'temp':T,'humidity':H,'result':dpF.toFixed(1)});
+}
+
+function calculateTempConvert(){
+  const val=+document.getElementById("conv-val").value;
+  const unit=document.getElementById("conv-unit").value;
+  if(isNaN(val))return;
+  let f,c,k;
+  if(unit==="f"){
+    f=val;
+    c=fToC(val);
+    k=c+273.15;
+  } else if(unit==="c"){
+    c=val;
+    f=cToF(val);
+    k=c+273.15;
+  } else {
+    k=val;
+    c=k-273.15;
+    f=cToF(c);
+  }
+  document.getElementById("conv-primary").textContent=`${f.toFixed(1)}°F = ${c.toFixed(1)}°C`;
+  document.getElementById("conv-kelvin").textContent=`${k.toFixed(2)} Kelvin`;
+  if(typeof gtag==='function') gtag('event','calculator_convert',{'value':val,'from_unit':unit});
+}
+
+// Initial calculation run
+calculateHeatIndex();
+calculateWindChill();
+calculateDewPoint();
+calculateTempConvert();
+</script>
+</body>
+</html>
