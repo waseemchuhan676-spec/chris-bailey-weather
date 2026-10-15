@@ -1,6 +1,4 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
@@ -8,16 +6,20 @@
         {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
         }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/lexington-weather", "destination": "/lexington-weather.html" },
+    { "source": "/louisville-weather", "destination": "/louisville-weather.html" },
+    { "source": "/bowling-green-weather", "destination": "/bowling-green-weather.html" },
+    { "source": "/covington-weather", "destination": "/covington-weather.html" },
+    { "source": "/kentucky-weather", "destination": "/kentucky-weather.html" },
+    { "source": "/radar", "destination": "/radar.html" },
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/tools", "destination": "/tools.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/privacy", "destination": "/privacy.html" }
   ]
 }
