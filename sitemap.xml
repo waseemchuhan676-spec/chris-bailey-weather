@@ -7,10 +7,34 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://chris-bailey-weather.vercel.app/blog.html</loc>
+    <loc>https://chris-bailey-weather.vercel.app/lexington-weather.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+  </url>
+  <url>
+    <loc>https://chris-bailey-weather.vercel.app/louisville-weather.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.98</priority>
+  </url>
+  <url>
+    <loc>https://chris-bailey-weather.vercel.app/bowling-green-weather.html</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://chris-bailey-weather.vercel.app/covington-weather.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://chris-bailey-weather.vercel.app/blog.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://chris-bailey-weather.vercel.app/kentucky-weather.html</loc>
